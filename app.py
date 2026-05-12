@@ -141,7 +141,8 @@ st.markdown("""
 
 def dashboard():
     # Header
-    st.markdown("<h1 style='text-align: center; margin-bottom: 2rem; font-weight: 700;'>Intelligent Resume Analytics</h1>", unsafe_allow_html=True)
+    st.markdown("<h1 style='text-align: center; margin-bottom: 0.5rem; font-weight: 800; color: #0f172a;'>✨ AI Resume Analyzer Pro</h1>", unsafe_allow_html=True)
+    st.markdown("<p style='text-align: center; color: #64748b; margin-bottom: 2rem;'>Unlock insights, score resumes, and prepare for interviews with AI.</p>", unsafe_allow_html=True)
     
     tabs = st.tabs(["Analysis", "Dashboard", "Interview Prep"])
     
