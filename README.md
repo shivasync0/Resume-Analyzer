@@ -1,81 +1,65 @@
-# 📄 AI Resume Analyzer
+# ✨ AI Resume Analyzer Pro
 
-An intelligent and beginner-friendly Resume Analyzer built using Python.  
-This project helps users upload resumes and get quick insights such as keyword matching, resume score, skills extraction, and basic analysis for improving job applications.
-
-Perfect as a college mini project for Python, AI, or Data Science beginners.
+An intelligent and professional Resume Analyzer built using Python and Streamlit.
+This tool helps users upload resumes and get quick AI-driven insights such as keyword matching, resume scoring, skills extraction, and personalized feedback for improving job applications.
 
 ---
 
-# -- Features
+## 🚀 Features
 
--  Upload Resume (PDF/DOCX/TXT)
-- Extract text from resumes
--  Analyze resume content
--  Resume scoring system
--  Skill extraction
-- Keyword matching with job description
--  Basic ATS-style analysis
--  Suggestions for improvement
--  Simple and beginner-friendly interface
+- **Upload Resume**: Supports PDF and DOCX formats.
+- **AI-Powered Analysis**: Extracts text and analyzes resume content using Groq AI models.
+- **Scoring System**: Generates an ATS compatibility and overall resume score.
+- **Skill Extraction & Matching**: Identifies missing skills based on the target job description.
+- **Suggestions for Improvement**: Provides actionable feedback to optimize bullets and content.
+- **Interview Prep**: Synthesizes behavioral and technical questions based on the candidate's profile.
+- **Modern UI**: Clean, premium, and interactive interface built with Streamlit and Plotly.
 
 ---
 
-# -- Tech Stack
+## 🛠️ Tech Stack
 
-- Python
-- Flask / Tkinter
-- NLTK / spaCy
-- PyPDF2
-- scikit-learn
-- Regex
-- Pandas
+- **Frontend**: Streamlit
+- **Backend**: Python, SQLite
+- **AI Engine**: Groq API (`gemma2-9b-it`)
+- **Libraries**:
+  - `python-docx` / `PyPDF2` for text extraction
+  - `plotly` for data visualization
+  - `pandas` for dashboard data management
+  - `scikit-learn` / `pymongo` (dependencies)
 
 ---
 
-# 📁 Project Structure
+## 💻 Installation & Usage
 
-```bash
-resume-analyzer/
-│
-├── app.py
-├── analyzer.py
-├── requirements.txt
-├── resumes/
-├── templates/
-├── static/
-└── README.md
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/your-username/Resume-Analyzer.git
+   cd Resume-Analyzer
+   ```
 
-git clone https://github.com/your-username/resume-analyzer.git
-cd resume-analyzer
-pip install -r requirements.txt
-python app.py
+2. **Install dependencies**:
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-<img width="1352" height="635" alt="image" src="https://github.com/user-attachments/assets/43027675-eab2-49e4-ad8f-2307f4695cce" />
+3. **Set up Environment Variables**:
+   Create a `.env` file in the root directory and add your Groq API key:
+   ```env
+   GROQ_API_KEY=your_api_key_here
+   ```
 
+4. **Run the application**:
+   ```bash
+   streamlit run app.py
+   ```
 
---How It Works
-User uploads a resume
-System extracts text from file
-NLP techniques analyze skills & keywords
-Resume is compared with job description
-Score and suggestions are generated
+---
 
---Concepts Used
-Natural Language Processing (NLP)
-Text Extraction
-Keyword Matching
-Data Processing
-Machine Learning Basics
+## 💡 How It Works
 
--- Future Improvements
-Add AI-based recommendations
-Improve ATS scoring accuracy
-Add multiple resume templates
-Deploy using cloud services
-
-Add login/signup system
-Support more file formats
-
--- project is on the way of processing--
-
+1. **User uploads a resume** and pastes a target job description.
+2. **System extracts text** from the provided file.
+3. **AI models analyze** the text to map skills, experience, and structure.
+4. **Resume is compared** against the job description to calculate an alignment score.
+5. **Dashboard presents insights**, improvements, and generated interview questions.
