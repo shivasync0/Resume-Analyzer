@@ -1,0 +1,8 @@
+streamlit
+pandas
+plotly
+PyPDF2
+python-docx
+groq
+python-dotenv
+pymongo
