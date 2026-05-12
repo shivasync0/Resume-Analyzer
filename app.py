@@ -152,11 +152,11 @@ def dashboard():
             st.markdown("### Document Upload")
             st.markdown("<p style='color: #64748b; font-size: 0.9rem;'>Upload a candidate's resume (PDF/DOCX) for AI-driven insights.</p>", unsafe_allow_html=True)
             
-            uploaded_file = st.file_uploader("", type=["pdf", "docx"])
+            uploaded_file = st.file_uploader("Upload Document", type=["pdf", "docx"], label_visibility="collapsed")
             
             st.markdown("<br/>", unsafe_allow_html=True)
             st.markdown("### Target Role Context")
-            job_desc = st.text_area("", placeholder="Paste job description here to tailor the analysis...", height=150)
+            job_desc = st.text_area("Job Description", placeholder="Paste job description here to tailor the analysis...", height=150, label_visibility="collapsed")
             
             st.markdown("<br/>", unsafe_allow_html=True)
             if st.button("Generate Analysis Report", use_container_width=True):
@@ -213,7 +213,7 @@ def dashboard():
                     }
                 ))
                 fig.update_layout(height=250, margin=dict(l=10, r=10, t=40, b=10), paper_bgcolor='rgba(0,0,0,0)', font={'family': "Inter"})
-                st.plotly_chart(fig, use_container_width=True)
+                st.plotly_chart(fig, width='stretch')
                 
                 # Metrics Row
                 m1, m2, m3 = st.columns(3)
