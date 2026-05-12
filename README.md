@@ -2,8 +2,6 @@
 
 AI Resume Analyzer is an intelligent, professional web application designed to help candidates optimize their resumes for Applicant Tracking Systems (ATS) and specific job descriptions. Powered by advanced AI (Groq API), this tool provides actionable feedback, strategic insights, and tailored interview questions to enhance career opportunities.
 
-<img width="1366" height="768" alt="Dashboard Preview" src="https://github.com/user-attachments/assets/d76190bc-e539-4032-8bab-a53be8207ea5" />
-
 ## ✨ Features
 
 - **Document Parsing**: Seamlessly extract text from PDF and DOCX resume files.
